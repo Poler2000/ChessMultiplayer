@@ -7,4 +7,3 @@ include_directories(chessCommon/include)
 
 add_subdirectory("${PROJECT_SOURCE_DIR}/server" "${PROJECT_SOURCE_DIR}/server/server_output")
 add_subdirectory("${PROJECT_SOURCE_DIR}/client" "${PROJECT_SOURCE_DIR}/client/client_output")
-#add_subdirectory(vendor/wxWidgets)

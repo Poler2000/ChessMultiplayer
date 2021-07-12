@@ -1,6 +1,9 @@
 #ifndef CHESSMULTIPLAYER_MESSAGE_H
 #define CHESSMULTIPLAYER_MESSAGE_H
 
+#include <vector>
+#include <variant>
+
 #include "MessageTypes.h"
 
 namespace poler::net {
@@ -11,7 +14,7 @@ namespace poler::net {
 
     struct Message {
         MsgHeader header{};
-
+        std::vector<std::pair<std::string, std::variant<int, double, std::string>>> data;
     };
 }
 

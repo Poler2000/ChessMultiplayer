@@ -1,5 +1,17 @@
-//
-// Created by pawel on 09.07.2021.
-//
+#include "app/Launcher.h"
 
-#include "../../include/app/Launcher.h"
+wxIMPLEMENT_APP(poler::Launcher);
+
+namespace poler {
+
+    bool Launcher::OnInit() {
+        mainMenu = new chess_gui::MainMenu();
+        mainMenu->Show(true);
+
+        return wxAppConsoleBase::OnInit();
+    }
+
+    int Launcher::OnRun() {
+        return wxAppBase::OnRun();
+    }
+}

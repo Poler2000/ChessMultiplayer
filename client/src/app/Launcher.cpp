@@ -1,4 +1,5 @@
 #include "app/Launcher.h"
+#include "net/Message.h"
 
 wxIMPLEMENT_APP(poler::Launcher);
 
